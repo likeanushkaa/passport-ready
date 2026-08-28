@@ -19,6 +19,7 @@ export default function UmangPassport() {
   const [reviewOpen, setReviewOpen] = useState(false);
   const [resolved, setResolved] = useState(false);
   const [booked, setBooked] = useState(false);
+  const [applicationStarted, setApplicationStarted] = useState(false);
   const go = (next: Screen) => { setScreen(next); window.scrollTo(0, 0); };
   const requirements = useMemo(() => buildRequirements(form), [form]);
 
@@ -27,7 +28,7 @@ export default function UmangPassport() {
       {screen === "home" && <UmangHome go={go} />}
       {screen === "passport" && <PassportSeva go={go} />}
       {screen === "login" && <Login go={go} />}
-      {screen === "dashboard" && <Dashboard go={go} />}
+      {screen === "dashboard" && <Dashboard go={go} applicationStarted={applicationStarted} startApplication={()=>setApplicationStarted(true)} />}
       {screen === "questions" && <Questions form={form} setForm={setForm} go={go} />}
       {screen === "documents" && <Documents requirements={requirements} uploads={uploads} setUploads={setUploads} documentTypes={documentTypes} setDocumentTypes={setDocumentTypes} go={go} />}
       {screen === "review" && <Review requirements={requirements} documentTypes={documentTypes} open={reviewOpen} setOpen={setReviewOpen} resolved={resolved} setResolved={setResolved} go={go} />}
@@ -54,7 +55,7 @@ function ServiceRow({icon,name,color}:{icon:string;name:string;color:string}){re
 
 function Login({go}:{go:(p:Screen)=>void}){return <section className="login-screen"><div className="login-lock">▣</div><h2>Continue to Passport Seva</h2><p>Access your passport services securely through UMANG.</p><button className="login-option primary-login" onClick={()=>go("dashboard")}><span>▣</span><div><b>Sign in with DigiLocker</b><small>Use verified identity and document records</small></div><i>›</i></button><div className="login-or"><span/>OR<span/></div><button className="login-option" onClick={()=>go("dashboard")}><span>✉</span><div><b>Sign in with email</b><small>Your account will be synced with DigiLocker</small></div><i>›</i></button></section>}
 
-function Dashboard({go}:{go:(p:Screen)=>void}){return <section className="dashboard"><p className="eyebrow">PASSPORT SEVA ON UMANG</p><h2>Good afternoon, Anushka</h2><article className="passport-card"><div className="passport-card-top"><span>REPUBLIC OF INDIA</span><b>पासपोर्ट　PASSPORT</b><i>✦</i></div><div className="passport-card-main"><div className="card-photo">AJ</div><div><small>PASSPORT NUMBER</small><b>N1234567</b><small>NAME</small><b>ANUSHKA JAIN</b><small>EXPIRY</small><b>14 MAY 2032</b></div></div><em>▣ Powered by DigiLocker</em></article><button className="record-cta"><span>▤</span><div><b>View passport record</b><small>Details, validity and issued documents</small></div><i>›</i></button><h3>Passport services</h3><div className="passport-actions"><button onClick={()=>go("questions")}><span>↻</span><b>Reissue passport</b><small>Renew, update or replace</small></button><button className="coming"><span>◌</span><b>Apply for visa</b><small>Coming soon</small></button><button><span>▦</span><b>Track application</b><small>Follow every step</small></button></div><h3>General services</h3><GeneralServices /></section>}
+function Dashboard({go,applicationStarted,startApplication}:{go:(p:Screen)=>void;applicationStarted:boolean;startApplication:()=>void}){return <section className="dashboard"><p className="eyebrow">PASSPORT SEVA ON UMANG</p><h2>Good afternoon, Anushka</h2><article className="passport-card"><div className="passport-card-top"><span>REPUBLIC OF INDIA</span><b>पासपोर्ट　PASSPORT</b><i>✦</i></div><div className="passport-card-main"><div className="card-photo">AJ</div><div><small>PASSPORT NUMBER</small><b>N1234567</b><small>NAME</small><b>ANUSHKA JAIN</b><small>EXPIRY</small><b>14 MAY 2032</b></div></div><em>▣ Powered by DigiLocker</em></article><button className="record-cta"><span>▤</span><div><b>View passport record</b><small>Details, validity and issued documents</small></div><i>›</i></button><h3>Passport services</h3><div className="passport-actions"><button onClick={()=>{startApplication();go("questions")}}><span>↻</span><b>Reissue passport</b><small>Renew, update or replace</small></button><button className="coming"><span>◌</span><b>Apply for visa</b><small>Coming soon</small></button></div>{applicationStarted&&<button className="ongoing-application" onClick={()=>go("questions")}><span className="ongoing-icon">↻</span><div><small>ONGOING APPLICATION</small><b>Passport reissue</b><p>Draft saved · Complete your assessment</p></div><i>Resume　›</i></button>}<h3>General services</h3><GeneralServices /></section>}
 
 function Questions({form,setForm,go}:{form:ReissueForm;setForm:(value:ReissueForm)=>void;go:(p:Screen)=>void}) {
   const set = (key: Exclude<keyof ReissueForm,"reasons">, value: string) => setForm({...form,[key]:value});
