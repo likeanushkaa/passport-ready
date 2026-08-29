@@ -1,0 +1,107 @@
+/* UMANG dark-mode home, matched to the supplied mobile references. */
+.phone-status { height: 38px; padding: 0 29px 7px; align-items: end; background: #1d1d1d; font-size: 14px; }
+.phone-status > span { display: flex; align-items: center; gap: 3px; font-size: 11px; }
+.phone-status .battery { padding: 2px 4px; border-radius: 4px; background: #f4f4f4; color: #1b1b1b; font-size: 10px; font-weight: 800; }
+.home-top { height: 80px; padding: 0 22px; background: #1d1d1d; }
+.government-lockup { display: flex; align-items: center; gap: 10px; }
+.india-mark { color: #ddd; font-size: 29px; }
+.umang-hand { color: #ff9216; font-size: 31px; }
+.home-header-actions { display: flex; align-items: center; gap: 9px; margin-left: auto; }
+.home-header-actions button { display: grid; position: relative; place-items: center; width: 35px; height: 35px; padding: 0; border: 0; border-radius: 50%; background: #303030; color: #fff; font-size: 14px; }
+.home-header-actions button:first-child { background: #1cc65a; font-size: 22px; }
+.home-header-actions .profile-action { background: #eaf3ff; color: #1768a8; font-weight: 800; }
+.profile-action i { position: absolute; right: -4px; bottom: -3px; display: grid; place-items: center; width: 16px; height: 16px; border-radius: 50%; background: #fff; color: #333; font-size: 10px; font-style: normal; }
+.umang-home-v2 { padding: 0 0 92px; background: #1d1d1d; }
+.home-search { display: flex; align-items: center; height: 58px; margin: 4px 20px 0; padding: 0 15px; border-radius: 14px; background: #343434; color: #9399a5; }
+.home-search > span { min-width: 0; flex: 1; overflow: hidden; color: #9399a5; font-size: 14px; white-space: nowrap; }
+.home-search > i { padding: 0 13px; border-right: 1px solid #6b6b6b; color: #ff8c17; font-size: 26px; font-style: normal; }
+.home-search > b { padding-left: 12px; color: #fff; font-size: 17px; }
+.home-greeting { margin: 42px 21px 25px; font-size: 21px; }
+.passport-carousel { position: relative; display: block; overflow: hidden; width: calc(100% - 40px); min-height: 205px; margin: 0 20px; padding: 24px 21px; border: 0; border-radius: 18px; background: linear-gradient(120deg,#4a2dad 0%,#7658cf 58%,#e29323 100%); color: #fff; text-align: left; box-shadow: 0 9px 20px #0005; }
+.passport-carousel::after { content: ""; position: absolute; right: -38px; top: 56px; width: 180px; height: 180px; border: 1px solid #ffffff70; border-radius: 50%; }
+.carousel-copy { position: relative; z-index: 2; width: 74%; }
+.carousel-copy small { display: block; color: #fff; font-size: 9px; font-weight: 800; letter-spacing: 1px; }
+.carousel-copy h2 { margin: 17px 0 9px; color: #fff; font-size: 26px; font-weight: 500; line-height: 1.02; }
+.carousel-copy h2 em { color: #ffd65a; font-style: normal; }
+.carousel-copy p { margin: 0 0 17px; color: #fff; font-size: 12px; line-height: 1.35; }
+.carousel-copy b { display: inline-block; padding: 0; background: transparent; color: #fff; font-size: 14px; }
+.carousel-art { position: absolute; z-index: 1; right: 27px; bottom: 38px; display: grid; place-items: center; width: 65px; height: 80px; color: #ffc94c; }
+.carousel-art span { font-size: 47px; filter: none; }
+.home-dots { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 10px 0 30px; }
+.home-dots i { width: 8px; height: 8px; border-radius: 50%; background: #aaa; }
+.home-dots i.active { width: 28px; border-radius: 10px; background: #8a74dd; }
+.home-digipin { width: calc(100% - 32px); margin: 0 16px; padding: 17px 20px; border-radius: 13px; background: #282828; }
+.home-digipin span { display: grid; place-items: center; width: 27px; height: 27px; border: 2px solid #3b3f48; border-radius: 50%; color: #ff8c17; }
+.home-digipin b { font-size: 15px; }
+.home-content-section { padding: 22px 20px; border-top: 8px solid #090909; }
+.home-content-section > h2 { margin: 0 0 17px; color: #f3f3f3; font-size: 21px; }
+.quick-services-section { margin-top: 11px; border-top: 0; }
+.quick-grid { display: flex; width: calc(100% + 6px); gap: 24px; overflow: hidden; justify-content: flex-start; }
+.quick { min-width: 82px; padding: 0; }
+.quick .quick-icon { display: grid; place-items: center; width: 62px; height: 62px; margin: 0 auto 10px; border-radius: 50%; color: #fff; font-size: 27px; }
+.quick .quick-icon.orange { background: #ff9219; }
+.quick .quick-icon.green { background: #57ad73; }
+.quick .quick-icon.red { background: #ef2549; }
+.quick .quick-icon.purple { background: #8e4ed8; }
+.quick b { color: #f1f1f1; font-size: 12px; font-weight: 500; }
+.quick .quick-line { display: inline; width: auto; height: auto; margin: 0; border-radius: 0; color: inherit; font-size: inherit; }
+.face-id-card { position: relative; min-height: 164px; overflow: hidden; padding: 21px 20px; border-top: 8px solid #090909; border-bottom: 8px solid #090909; background: linear-gradient(100deg,#1f1f1f 0 70%,#343434); }
+.face-id-card h2 { margin: 0; font-size: 16px; line-height: 1.4; }
+.face-id-card h2 em { color: #287cb7; font-style: normal; font-weight: 500; }
+.face-id-card p { margin: 8px 0 17px; color: #e1e1e1; font-size: 12px; }
+.face-id-card button { width: 72%; padding: 9px; border: 1px solid #1396e5; border-radius: 10px; background: #fff; color: #0873b4; font-size: 13px; }
+.face-phone { position: absolute; right: 13px; bottom: -16px; width: 69px; height: 130px; border: 4px solid #151515; border-radius: 14px; background: linear-gradient(165deg,#e8eef4,#b7d6ec); transform: rotate(8deg); box-shadow: 0 4px 13px #0008; }
+.face-phone::before { content: ""; position: absolute; top: 5px; left: 23px; width: 20px; height: 4px; border-radius: 6px; background: #171717; }
+.face-phone span { display: grid; place-items: center; width: 45px; height: 45px; margin: 38px auto 0; border: 2px solid #4275c6; border-radius: 12px; color: #3e71bc; font-size: 25px; }
+.recent-services { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.home-service,.home-document,.helpline { padding: 0; border: 0; background: transparent; color: #fff; }
+.home-service > span { display: grid; place-items: center; width: 70px; height: 70px; margin: 0 auto 10px; border: 10px solid #333; border-radius: 14px; background: #fff; color: #222; font-size: 14px; font-weight: 800; }
+.home-service > span.passport { color: #1e3373; font-size: 12px; }
+.home-service > span.consumer { color: #222; font-size: 10px; }
+.home-service > span.bharatnet { color: #dd6e22; font-size: 18px; }
+.home-service b,.home-document b,.helpline b { font-size: 12px; font-weight: 500; line-height: 1.35; }
+.documents-home { background-color: #1d1d1d; background-image: linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px); background-size: 43px 43px; }
+.documents-home > h2 { color: #eaeaea; }
+.home-documents { display: grid; grid-template-columns: repeat(4,1fr); gap: 9px; }
+.home-document > span { display: grid; place-items: center; width: 66px; height: 72px; margin: 0 auto 10px; border-radius: 11px; background: #343434; color: #f5f5f5; font-size: 25px; }
+.financial-card,.job-card { display: flex; min-height: 150px; overflow: hidden; border-top: 8px solid #090909; background: #292a2f; }
+.financial-card > div,.job-card > div { z-index: 1; flex: 1; padding: 19px 17px; }
+.financial-card h2,.job-card h2 { margin: 0 0 12px; font-size: 18px; }
+.financial-card p,.job-card p { margin: 0 0 10px; color: #eee; font-size: 13px; line-height: 1.35; }
+.financial-card button,.job-card button { padding: 7px 16px; border: 0; border-radius: 6px; background: #fff; color: #1677ad; font-size: 12px; }
+.financial-card > span,.job-card > span { display: grid; place-items: center; width: 43%; background: linear-gradient(135deg,#332b29,#111); font-size: 62px; }
+.helpline-section { padding-bottom: 30px; }
+.helpline-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 25px 13px; }
+.helpline > span { display: grid; place-items: center; width: 67px; height: 67px; margin: 0 auto 9px; border-radius: 11px; background: #343434; font-size: 30px; }
+.job-card > span { background: linear-gradient(135deg,#394246,#17191b); }
+.home-nav { position: fixed; z-index: 30; left: 50%; right: auto; bottom: 0; width: min(100%,440px); height: 67px; transform: translateX(-50%); border-top: 1px solid #333; }
+.home-nav button { min-width: 64px; color: #fff; font-size: 22px; }
+.home-nav button.active { margin: 5px 0; border-radius: 23px; background: #55595e; color: #91a4dc; }
+.home-nav .bank-partner { min-width: 92px; align-self: stretch; border-radius: 22px 0 0 0; background: #eafcff; color: #1477b4; }
+.home-nav .bank-partner b { font-size: 18px; }
+
+/* DigiLocker connected banner, adapted to UMANG dark mode. */
+.digilocker-connect-banner { margin: 17px 0 25px; padding: 17px; border: 1px solid #564d8f; border-radius: 15px; background: linear-gradient(145deg,#25243a,#202126); box-shadow: 0 8px 18px #0003; }
+.digilocker-connect-banner > small { color: #9e8ef2; font-size: 10px; font-weight: 800; }
+.digilocker-connect-banner > h2 { margin: 9px 0 7px; font-size: 19px; line-height: 1.25; }
+.digilocker-connect-banner > p { margin: 0; color: #bcc1cc; font-size: 12px; line-height: 1.5; }
+.digilocker-connect-banner > button { margin-top: 15px; padding: 11px 15px; border: 0; border-radius: 9px; background: linear-gradient(90deg,#5a28c8,#7747df); color: #fff; font-size: 12px; font-weight: 800; }
+
+/* Police verification officer assignment. */
+.assigned-officer-card { overflow: hidden; margin: -8px 0 25px; border: 1px solid #416c53; border-radius: 13px; background: #232b27; }
+.officer-card-label { display: flex; align-items: center; gap: 6px; padding: 11px 13px; border-bottom: 1px solid #365342; color: #8bd2a5; font-size: 8px; font-weight: 800; letter-spacing: .7px; }
+.officer-card-label > span { color: #52cf82; }
+.officer-card-label > em { margin-left: auto; padding: 4px 6px; border-radius: 4px; background: #31543f; color: #b9e9c9; font-size: 7px; font-style: normal; }
+.officer-profile { display: flex; align-items: center; gap: 11px; padding: 14px 13px; }
+.officer-avatar { display: grid; place-items: center; flex: none; width: 43px; height: 43px; border-radius: 50%; background: linear-gradient(135deg,#3e7555,#6cae83); color: #fff; font-size: 13px; font-weight: 800; }
+.officer-profile div { flex: 1; }
+.officer-profile b,.officer-profile small { display: block; }
+.officer-profile b { font-size: 12px; }
+.officer-profile small { margin-top: 4px; color: #aebdb4; font-size: 9px; line-height: 1.35; }
+.officer-profile i { display: grid; place-items: center; width: 21px; height: 21px; border-radius: 50%; background: #2c6e48; color: #fff; font-size: 10px; font-style: normal; }
+.officer-details { display: grid; grid-template-columns: 1.25fr 1fr; gap: 8px; padding: 0 13px 13px; }
+.officer-details > div { padding: 10px; border-radius: 8px; background: #1e2421; }
+.officer-details small,.officer-details b { display: block; }
+.officer-details small { color: #7eb793; font-size: 7px; letter-spacing: .5px; }
+.officer-details b { margin-top: 4px; font-size: 9px; line-height: 1.35; }
+.assigned-officer-card > p { margin: 0; padding: 10px 13px; border-top: 1px solid #365342; color: #abd0b8; font-size: 9px; line-height: 1.45; }

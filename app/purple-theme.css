@@ -1,0 +1,75 @@
+/* Final Passport Seva accent and the tracker/booking refinements. */
+:root {
+  --passport-purple: #5a28c8;
+  --passport-purple-bright: #7747df;
+  --passport-purple-deep: #3f1d8f;
+  --passport-purple-soft: #32284b;
+}
+
+.eyebrow,
+.step-label { color: #b39af7; }
+.flow-cta { background: linear-gradient(90deg, var(--passport-purple), var(--passport-purple-bright)); box-shadow: 0 6px 16px #32147152; }
+.unlock-banner { background: linear-gradient(135deg, var(--passport-purple-deep), var(--passport-purple-bright)); }
+.primary-login { border-color: #765bd4; background: #31294a; }
+.login-lock,
+.pin-lock { background: #3b3060; color: #d3c5ff; }
+.record-cta > span,
+.passport-actions button > span { color: #bca8ff; }
+.passport-actions .coming::after { color: #c9baff; }
+.ongoing-application { border-color: #6750a5; background: linear-gradient(100deg, #302746, #282b32); }
+.ongoing-icon { background: #493875; color: #d0c2ff; }
+.question .chosen { border-color: #795ee1; background: #31284b; }
+.question .chosen i { color: #cbbdff; }
+.question .chosen small { color: #d5ccf4; }
+.requirement-head em { background: #3a2e59; color: #d1c1ff; }
+.selected-slot { border-color: #8064e8 !important; background: #352b50 !important; }
+.appointment-book .rpo-label { background: #392f52; color: #d3c6ff; }
+.show-qr { background: #3a2a60; color: #ded4ff; }
+.scheduled-status > span { background: #493578; color: #d9ceff; }
+.scheduled-status em { color: #d9d0ff; }
+.visit-actions button,
+.grievance-entry { color: #bfaaff; }
+.global-grievance { background: var(--passport-purple); }
+.passport-profile-card { min-height: 238px; padding: 15px; border-radius: 16px; background: linear-gradient(135deg, #351572, #5724b3 55%, #7a47dc); box-shadow: 0 10px 24px #1e0d4266; }
+.passport-profile-card::before { width: 150px; height: 150px; }
+.profile-card-top b { font-size: 20px; }
+.profile-card-grid { gap: 11px 16px; margin: 17px 0 13px; }
+.passport-profile-card > button { padding: 11px; }
+.profile-card-top small,
+.profile-card-grid small { color: #ded2ff; }
+.passport-profile-card > button { color: var(--passport-purple-deep); }
+.assessment-progress i.active { background: var(--passport-purple-bright); }
+
+.psk-selection-label { display: block; margin: 20px 0 7px; color: #b8bfcb; font-size: 10px; font-weight: 600; }
+.schedule-note { margin-top: 24px !important; padding-top: 4px; }
+.additional-document.attached { background: #242d28; }
+.additional-document.attached > span { background: #295a42; color: #83e4aa; }
+.additional-document.attached small { color: #a9d2b9; }
+.additional-document.attached button { border-color: #5c9b78; color: #9de1b8; }
+.attention-document.resolved-upload { border-color: #436e55; background: #222f28; }
+.attention-document.resolved-upload > span { background: #295a42; color: #83e4aa; }
+.attention-document.resolved-upload b { color: #d9f4e3; }
+.attention-document.resolved-upload p { color: #acd0ba; }
+.attention-document.resolved-upload .repair-actions .secondary { border-color: #5c9b78; color: #9de1b8; }
+
+.tracking-screen h3 { margin: 26px 0 10px; font-size: 16px; }
+.application-progress-card { overflow: hidden; margin: 20px 0 26px; border: 1px solid #52466f; border-radius: 15px; background: #25272c; box-shadow: 0 9px 24px #0004; }
+.progress-card-head { display: flex; align-items: center; gap: 11px; padding: 15px; border-bottom: 1px solid #3d3a49; background: linear-gradient(100deg, #33284c, #292b31); }
+.progress-card-head > span { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #493578; color: #d8ccff; font-weight: 700; }
+.progress-card-head small,
+.progress-card-head b { display: block; }
+.progress-card-head small { color: #bcb1da; font-size: 8px; letter-spacing: .8px; }
+.progress-card-head b { margin-top: 3px; font-size: 13px; letter-spacing: .4px; }
+.progress-card-head em { margin-left: auto; padding: 5px 7px; border-radius: 5px; background: #ffffff12; color: #d9d0ff; font-size: 8px; font-style: normal; font-weight: 700; letter-spacing: .5px; }
+.appointment-truth { padding: 17px 15px; }
+.appointment-truth small,
+.appointment-truth b { display: block; }
+.appointment-truth small { color: #b8a5ef; font-size: 8px; font-weight: 700; letter-spacing: .75px; }
+.appointment-truth b { margin-top: 6px; font-size: 17px; }
+.appointment-truth p { margin: 6px 0 0; color: #aeb6c2; font-size: 10px; line-height: 1.45; }
+.application-progress-card > button { width: 100%; padding: 14px; border: 0; border-top: 1px solid #403b4b; background: #35294f; color: #d7cbff; font-size: 12px; font-weight: 700; }
+.application-progress-card.submitted { border-color: #3f7054; }
+.application-progress-card.submitted .progress-card-head { background: linear-gradient(100deg, #243d30, #292b31); }
+.application-progress-card.submitted .progress-card-head > span { background: #2b7754; color: #fff; }
+.application-progress-card.submitted .progress-card-head em { color: #aee2c2; }
+.application-progress-card.submitted .appointment-truth small { color: #8ad1a5; }
