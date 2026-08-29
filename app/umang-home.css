@@ -123,12 +123,16 @@
 .police-card-head small { color: #c8b8f4; font-size: 8px; font-weight: 800; letter-spacing: .8px; }
 .police-card-head b { margin-top: 4px; font-size: 12px; line-height: 1.3; }
 .police-card-head em { padding: 5px 6px; border-radius: 5px; background: #ffffff15; color: #d9ceff; font-size: 7px; font-style: normal; font-weight: 800; letter-spacing: .45px; white-space: nowrap; }
+.police-status-summary { padding: 16px 14px 7px; }
+.police-status-summary small,.police-status-summary b { display: block; }
+.police-status-summary small { color: #bba8ef; font-size: 8px; font-weight: 800; letter-spacing: .75px; }
+.police-status-summary b { margin-top: 6px; font-size: 15px; }
+.police-status-summary p { margin: 5px 0 0; color: #aeb6c2; font-size: 10px; line-height: 1.4; }
 .police-card-details { display: grid; grid-template-columns: 1.2fr 1fr; gap: 8px; padding: 13px; }
 .police-card-details > div { padding: 10px; border-radius: 8px; background: #1e2025; }
 .police-card-details small,.police-card-details b { display: block; }
 .police-card-details small { color: #a99bcf; font-size: 7px; letter-spacing: .45px; }
 .police-card-details b { margin-top: 4px; font-size: 9px; line-height: 1.35; }
 .police-verification-card > p { margin: 0; padding: 10px 13px; border-top: 1px solid #3d3a48; color: #b9bec8; font-size: 9px; line-height: 1.45; }
-.police-verification-card > button { width: 100%; padding: 12px; border: 0; border-top: 1px solid #4a405f; background: #35294f; color: #d7cbff; font-size: 10px; font-weight: 800; }
 .police-verification-card.compact { margin: 17px 0 22px; }
 .police-verification-card.compact .police-card-details { grid-template-columns: 1.15fr 1fr; }
